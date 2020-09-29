@@ -1,0 +1,30 @@
+name: sigver
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - cudatoolkit=10.1.243=h6bb024c_0
+  - h5py=2.8.0=py36h989c5e5_3
+  - ninja=1.9.0=py36hfd86e86_0
+  - numpy-base=1.18.5=py36hde5b4d6_0
+  - pillow=7.2.0=py36hb39fc2d_0
+  - python=3.6.10=h7579374_2
+  - pytorch=1.4.0=py3.6_cuda10.1.243_cudnn7.6.3_0
+  - scipy=1.5.2=py36h0b6359f_0
+  - tensorboard=1.14.0=py36hf484d3e_0
+  - tensorflow=1.14.0=mkl_py36h2526735_0
+  - tensorflow-base=1.14.0=mkl_py36h7ce6ba3_0
+  - pip:
+    - easydict==1.9
+    - flask==1.1.2
+    - matplot==0.1.9
+    - matplotlib==3.3.0
+    - opencv-python==4.3.0.38
+    - pandas==1.1.1
+    - pyyaml==5.3.1
+    - scikit-image==0.17.2
+    - scikit-learn==0.23.1
+    - torchvision==0.5.0
+    - tqdm==4.48.0
+prefix: /home/hisiter/anaconda3/envs/sigver
+
