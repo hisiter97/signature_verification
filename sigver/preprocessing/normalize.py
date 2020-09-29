@@ -34,6 +34,9 @@ def preprocess_signature(img: np.ndarray,
 
     """
     h, w = img.shape[0], img.shape[1]
+    if h > w:
+        addition = int((1.5*h - w) // 2)
+        img = cv2.copyMakeBorder(img, 0, 0, addition, addition, borderType=cv2.BORDER_CONSTANT, value=255)
     new_h, new_w = resize_size[0], resize_size[1]
     # if h < new_h and w < new_w:
     #     img_resized = img
